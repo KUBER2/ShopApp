@@ -52,7 +52,7 @@ public class Product {
         return id;
     }
 
-    public String getClor() {
+    public String getColor() {
         return color;
     }
 
@@ -63,4 +63,16 @@ public class Product {
     public String getProductName() {
         return productName;
     }
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", productName='" + productName + '\'' +
+                ", price=" + price +
+                ", weight=" + weight +
+                ", color='" + color + '\'' +
+                ", productCount=" + productCount +
+                '}';
+    }
+
 }
